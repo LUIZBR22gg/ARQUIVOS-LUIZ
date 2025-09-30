@@ -1,0 +1,157 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5; /* fundo claro suave */
+  color: #333; /* texto escuro */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header.titulo {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  border-bottom: 2px solid #a2d5f2;
+  background-color: #d9f0ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1b3b5f;
+  letter-spacing: 1px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Sessões */
+.sessao {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sessao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.sessao h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #6fb1fc;
+  padding-left: 10px;
+  color: #1b3b5f;
+}
+
+/* Texto e listas */
+.sessao p,
+.sessao li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+/* Links */
+a {
+  color: #1b3b5f;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #6fb1fc;
+  text-decoration: underline;
+}
+
+/* Links de contato */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Miniatura do projeto */
+.projeto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #e3f2fd; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.projeto img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #6fb1fc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(111,177,252,0.3);
+}
+
+.info-projeto p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .sessao h3 {
+    font-size: 1.3rem;
+  }
+
+  .projeto {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projeto img {
+    width: 60px;
+    height: 60px;
+  }
+}
